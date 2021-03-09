@@ -1,0 +1,345 @@
+.exsit-pictures {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#dropezone {
+    width: 100%;
+    height: 250px;
+    border: 1px solid;
+}
+
+#myDropzone {
+    box-sizing: border-box;
+    width: 95%;
+    padding: 0 10px;
+}
+
+#previews {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 25px;
+    width: 95%;
+}
+
+.file-row {
+    width: 25%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.file-row:first-child {
+    width: 50%;
+    height: 325px;
+}
+
+.file-row:nth-child(5) {
+    position: absolute;
+    left: 0;
+    top: 175px;
+    margin: 0;
+}
+
+.file-row:nth-child(4) {
+    position: absolute;
+    left: 25%;
+    top: 175px;
+}
+
+.file-row .pictures,
+.file-row .pictures > span {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.file-row .pictures .preview img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.file-row .size-pic {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+
+.file-row .size-pic .size {
+
+    display: none;
+}
+
+.file-row .title-pic {
+
+    display: none;
+}
+
+.file-row .bnt-detailes {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    z-index: 99;
+}
+
+.file-row:nth-child(1) .bnt-detailes {
+
+    top: 12px;
+    left: 60px;
+}
+
+.file-row .bnt-detailes .start,
+.file-row .bnt-detailes .cancel {
+
+    display: none;
+}
+
+.file-row .bnt-detailes .delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.my-panel .main-panel .main-inner .file-row .bnt-detailes .delete > span {
+
+    position: relative;
+    z-index: 99;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+}
+
+#previews .active .progress {
+
+    width: 75%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 45px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 100px;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+#previews .active .progress .progress-bar-success {
+
+    width: 0;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ff395c;
+    border-radius: 100px;
+}
+
+.file-row.active .pictures::before {
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(000, 000, 000, .5);
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 0;
+    z-index: 99;
+}
+
+.my-panel .main-panel .main-inner .file-row .bnt-detailes .delete ~ .change-img {
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    left: -35px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.modal-images .inner-mdlimg {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 40px 0;
+    padding-top: 55px;
+    box-sizing: border-box;
+}
+
+.modal-images .inner-mdlimg .main-boximages {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.modal-images .inner-mdlimg .main-boximages .item-images {
+
+    width: 22.6%;
+    height: 160px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.modal-images .inner-mdlimg .main-boximages .item-images .pic {
+
+    width: 100%;
+    height: 100%;
+}
+
+.modal-images .inner-mdlimg .main-boximages .item-images .pic img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-images .inner-mdlimg .main-boximages .mCustomScrollBox {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.modal-images .inner-mdlimg .main-boximages .mCSB_scrollTools {
+    left: unset;
+    right: 10px;
+    z-index: 999;
+    margin: 10px 0;
+    height: 100%;
+    margin: 0;
+}
+
+.modal-images .inner-mdlimg .main-boximages .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+
+.modal-images .inner-mdlimg .main-boximages .mCustomScrollBox .mCSB_container {
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 3px;
+}
+
+.modal-images .inner-mdlimg .main-boximages .mCSB_dragger .mCSB_dragger_bar {
+
+    right: -2px;
+}
+
+.modal-images .inner-mdlimg > span {
+
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    font-size: 30px;
+    color: #eceff1;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.modal-images .inner-mdlimg > span:hover{
+    
+    color: #ff2e66;
+    transition: all .3s;
+}
+
+.overlay-imagespart{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #000;
+    opacity: 0;
+    z-index: 999999;
+    display: none;
+    transition: all .4s;
+}
+
+.overlay-imagespart.show{
+    
+    height: 100%;
+    opacity: .5;
+    transition: all .4s;
+}
+
+.modal-images {
+    position: absolute;
+    width: 70%;
+    height: 82vh;
+    top: 18vh;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 9999999;
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+    transition: all .2s;
+}
+
+.modal-images.show{
+    
+    top: 12vh;
+    opacity: 1;
+    transition: all .4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-====================== end ====================-*/

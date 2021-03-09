@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html prefix="og:">
+
+<head prefix="my_namespace: http://congress.eccim.com/#">
+
+    <!-- Public META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- /Public META -->
+
+    <!-- Title -->
+    <title>بوم گرد - پرسش های متداول</title>
+    <link rel="shortcut icon" href="" />
+    <!-- /Title -->
+
+    <!-- SEO META -->
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta content="logo" property="og:image">
+    <meta content="" property="og:image:secure_url">
+    <meta property="og:image:type" content="" />
+    <meta property="og:image:width" content="" />
+    <meta property="og:image:height" content="" />
+    <meta content="" name="">
+    <!-- /SEO META -->
+
+    <!-- Required styles for MDC Web -->
+    <link rel="stylesheet" href="css/material-components-web.min.css">
+
+    <!-- Web Fonts Css -->
+    <link rel="stylesheet" type="text/css" href="fonts/IRANSans/css/IRANSans.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Open_Sans/OpenSans.css">
+    <link rel="stylesheet" type="text/css" href="fonts/product-sans/OpenSans.css">
+    <link rel="stylesheet" href="css/mdicon.css">
+
+    <!-- Web font-icon -->
+    <link rel="stylesheet" type="text/css" href="fonts/svg-fons/svg-fonts.css">
+
+    <!-- Owl Carousel Css -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+    <!-- Template Pc Css -->
+    <link rel="stylesheet" type="text/css" href="css/Template.css">
+
+    <!-- Large Monitors Pc Css -->
+    <link rel="stylesheet" type="text/css" href="css/largeMonitors.css">
+
+    <!-- Tablet Css -->
+    <link rel="stylesheet" media="only screen and (min-width:650px) and (max-width: 1000px)" href="css/tablet.css">
+
+    <!-- Mobile Css -->
+    <link rel="stylesheet" media="only screen and (min-width: 0px) and (max-width: 640px)" href="css/mobile.css">
+
+    <!-- Required MDC Web JavaScript library -->
+    <script src="js/material-components-web.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="Residence-header" class="Residence-page Residence-header side-pages-header">
+        <div class="top-header">
+            <div class="menu mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet right">
+                        <a href="#">
+                            <div class="logo">
+                                <!-- logo changes here -->
+                                <div class="titles side-pages-logo">
+                                    <div class="txts">
+                                        <span class="boom-logo"><img src="svg/logotype.svg"></span>
+                                        <span class="title">سرویس اجاره اقامتگاه</span>
+                                    </div>
+                                    <div class="logo">
+                                        <i class="icon-BoomGard"></i>
+                                    </div>
+                                </div>
+                                <!-- logo changes here -->
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet left">
+
+                        <button class="mdc-button search" id="search-bar">
+                            <span class="mdc-button__ripple"></span> جستجو
+                        </button>
+
+                        <button class="mdc-button host">
+                            <span class="mdc-button__ripple"></span> میزبان شوید!
+                        </button>
+                        <button onclick="openRegisterPopup()" class="mdc-button mdc-button--raised join">
+                            <span class="mdc-button__ripple"></span>ثبت نام/ ورود
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet search-bar not-visible">
+                    <div class="icon">
+                        <i class="material-icons">search</i>
+                    </div>
+                    <input class="search-it" id="search-it" placeholder="جستجو...">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="faq-main">
+        <div class="mdc-layout-grid__inner">
+            <div id="width-before" class="faq-container mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-12-tablet">
+
+                <div id="header-fix-width" class="faq-header">
+                    <h3 class="faq-header-title">پرسش های متداول</h3>
+                    <span class="faq-header-txt">لیست سوالاتی که کاربران به کرات با آنها رو به رو می شوند:</span>
+                </div>
+
+                <div class="all-faq">
+                    <ul class="faq-list">
+                        <li class="faq-list-item">
+                            <p class="faq-list-title">نحوه رزرو</p>
+                            <ul class="faq-questions-list">
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">چگونه می‌توانم یک اقامتگاه را رزرو کنم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>پس از ثبت‌نام یا ورود به سایت، با استفاده از گزینه‌ی “انتخاب شهر”، مقصد مورد نظرتان را انتخاب کنید. بعد از یافتن اقامتگاه مناسب، با استفاده از تقویم اقامتگاه (درصورت استفاده از موبایل با انتخاب دکمه‌ی درخواست رزرو، تقویم اقامتگاه برای شما نمایش داده می‌شود)، تاریخ رفت و ‌برگشت و تعداد همراهان خود را وارد نمایید و درخواست رزرو را کلیک کنید.</p>
+                                        </li>
+                                        <li>
+                                            <p>منتظر بمانید! پیام میزبان حاوی پر یا خالی بودن خانه حداکثر تا 3ساعت، برای شما به صورت پیامک، ارسال خواهد شد. در صورت خالی بودن اقامتگاه، لینک پیش‌پرداخت برای شما پیامک خواهد شد. هم‌چنین شما می‌توانید از پنل کاربری وارد صفحه‌ی “سفرهای من” شوید و با انجام پیش‌پرداخت، درخواست خود را نهایی کنید.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">چگونه می‌توانم در سایت ثبت‌نام کنم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>با انتخاب گزینه‌ی “ورود | ثبت‌نام” در نوار بالا و وارد کردن مشخصات فردی و شماره موبایل، می‌توانید به صورت رایگان حساب کاربری خود را ایجاد کنید.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">چرا تقویم اقامتگاه، خالی بودن آن را نمایش می‌دهد ولی بعد از درخواست رزرو، میزبان اعلام پر بودن می‌کند؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>تایید درخواست شما، منوط به پذیرش شرایط درخواست شما از طرف مالک می‌باشد. مالک بنا به شرایط درخواست، می‌تواند آن را تایید نکند.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">چطور می‌توانم از وضعیت درخواست‌هایم مطلع بشوم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>می‌توانید با مراجعه به صفحه‌ی “سفرهای من” وضعیت تمامی درخواست‌هایتان را مشاهده نمایید.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="faq-list-item">
+                            <p class="faq-list-title">ارتباط با میزبان</p>
+                            <ul class="faq-questions-list">
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">آیا می‌توانم قبل از پیش‌پرداخت و سفر با میزبان گفتگو داشته باشم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>برای گفتگو با میزبان می‌توانید از قسمت "سفرهای من" گزینه “گفتگو با میزبان” را انتخاب کنید و به صورت چت با میزبان در ارتباط باشید.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">چگونه می‌توانم شماره تماس میزبان و آدرس اقامتگاه را دریافت کنم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>بعد از انجام پیش‌پرداخت، شماره تماس میزبان و آدرس اقامتگاه برای شما پیامک خواهد شد. هم‌چنین در صفحه‌ی “سفرهای من” گزینه "مشاهده رسید" برای شما مهمان گرامی فعال خواهد شد که با انتخاب آن، شماره تماس میزبان و آدرس اقامتگاه مورد نظر قابل رویت می‌باشد.</p>
+                                        </li>
+                                        <li>
+                                            <p>شما می‌توانید جهت هماهنگی برای تحویل کلید با شماره درج شده از میزبان، تماس حاصل فرمایید.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="faq-list-item">
+                            <p class="faq-list-title">نحوه پرداخت</p>
+                            <ul class="faq-questions-list">
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">هزینه‌ی اقامتگاه را به چه صورت پرداخت کنم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>پرداخت هزینه، به صورت پیش‌پرداخت (پرداخت امن و تضمین شده به سرویس بوم‌گرد) و به صورت پرداخت در محل (بعد از تحویل کلید) انجام می‌گیرد. </p>
+                                        </li>
+                                        <li>
+                                            <p>پیش‌پرداخت به معنای پرداخت حداکثر دو شب از اقامت به سرویس بوم‌گرد می‌باشد. این پرداخت از طریق درگاه‌های معتبر بانکی صورت می‌گیرد و فقط کافی‌ست، بعد از انتخاب درگاه بانکی موردنظر، پرداخت خود را انجام دهید. (برای پرداخت اقساطی، از طریق کارت‌های بیمه ملت و اطلاع از جزئیات بیشتر، می‌توانید با پشتیبانی بیمه ملت با شماره تماس ۸۵۳۳۳-۰۲۱ در ارتباط باشید) </p>
+                                        </li>
+                                        <li>
+                                            <p>پرداخت در محل، به معنای پرداخت باقی‌مانده‌ی هزینه‌ی اقامت، بعد از تحویل کلید و مطابقت اطلاعات درج شده در آگهی با اقامتگاه تحویل گرفته شده توسط شما، به میزبان می‌باشد.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="faq-list-item">
+                            <p class="faq-list-title">لغو و کنسلی</p>
+                            <ul class="faq-questions-list">
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">بعد از ثبت درخواست رزرو (قبل از پیش‌پرداخت)، برنامه‌ی سفرم تغییر کرده است؛ چگونه درخواست رزرو را لغو کنم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>برای لغو درخواست ثبت شده از مسیر "سفرهای من > گفتگو با میزبان > لغو درخواست" اقدام بفرمایید.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">بعد از نهایی شدن رزرو (پس از انجام پیش‌پرداخت)، برنامه سفرم تغییر کرده شده است؛ چگونه می‌توانم رزروم را کنسل کنم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>برای کنسلی رزرو قطعی و پرداخت شده، حتما به صورت تلفنی با پشتیبانی بوم‌گرد تماس حاصل فرمایید - تلفن تماس ۰۲۱۷۶۲۵۰۱۰۹</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="faq-list-item">
+                            <p class="faq-list-title">عدم تطابق اقامتگاه</p>
+                            <ul class="faq-questions-list">
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">اگر اقامتگاه با اطلاعات و عکس‌های موجود در سایت مغایرت داشت و یا نظافت آن رعایت نشده بود، راه‌حل چیست؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>تطابق مشخصات و نظافت توسط “بوم‌گرد” تضمین شده است. در صورت وجود هر مسئله‌ای، پیش‌ از ترک اقامتگاه، سریعا با پشتیبانی سرویس بوم‌گرد تماس بگیرید - تلفن تماس ۰۲۱۷۶۲۵۰۱۰۹</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="faq-list-item">
+                            <p class="faq-list-title">ثبت اقامتگاه</p>
+                            <ul class="faq-questions-list">
+                                <li class="faq-question-list-item">
+                                    <span class="question-span"><i class="material-icons">arrow_drop_down</i>
+                                        <p class="question">چگونه میتوانم میزبان شوم؟</p>
+                                    </span>
+                                    <ul class="answeres">
+                                        <li>
+                                            <p>بعد از ثبت‌نام در سایت، گزینه‌ی "میزبان شوید" را انتخاب کنید؛ سپس با مطالعه و موافقت قوانین، پروسه ثبت مشخصات و آپلود عکس‌های اقامتگاه را انجام داده و منتظر تایید اقامتگاه از طرف کارشناس‌های سرویس بوم‌گرد شوید. بعد از تایید، آگهی اقامتگاه شما در سایت نمایش داده می‌شود.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer abt-boom mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+
+            <div class="main-footer mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+                <div class="mdc-layout-grid">
+                    <div class="padding mdc-layout-grid__inner">
+
+                        <section class="about-us mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+                            <div class="mdc-layout-grid__inner">
+
+                                <div class="mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+                                    <div class="title-about">
+                                        <a class="page-scroll" href="#head">
+                                            <i class="material-icons">arrow_drop_down</i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <section class="info-about-us mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+                            <div class="mdc-layout-grid__inner">
+
+                                <div class="mdc-layout-grid__cell--span-3-desktop">
+                                    <div class="policy">
+                                        <div class="icon">
+                                            <i class="material-icons">business_center</i>
+                                        </div>
+                                        <ul class="information-policy">
+                                            <li><a href="#">
+                                                    <h5>ضوابط حقوقی</h5>
+                                                </a></li>
+                                            <li><a href="#">قوانین و مقررات</a></li>
+                                            <li><a href="#">ثبت شکایت</a></li>
+                                            <li><a href="#">حریم خصوصی</a></li>
+                                            <li><a href="#">قواعد باز پرداخت وجه</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="pad mdc-layout-grid__cell--span-3-desktop">
+                                    <div class="policy">
+                                        <div class="icon">
+                                            <i class="material-icons">info</i>
+                                        </div>
+                                        <ul class="information-policy">
+                                            <li><a href="#">
+                                                    <h5>اطلاعات</h5>
+                                                </a></li>
+                                            <li><a href="#">درباره بوم گرد</a></li>
+                                            <li><a href="#">تماس با ما</a></li>
+                                            <li><a href="#">سوالات متداول</a></li>
+                                            <li><a href="#">مجله بوم گرد</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="mdc-layout-grid__cell--span-6-desktop">
+                                    <div class="call">
+
+                                        <div class="icon">
+                                            <i class="material-icons">forum</i>
+                                        </div>
+
+                                        <div class="information-policy">
+                                            <h5>با ما در تماس باشید</h5>
+                                            <div class="bk-img">
+                                                <div class="company">
+                                                    <span>نام شرکت: </span><span>شرکت ایده گذر پردیس</span>
+                                                </div>
+                                                <div class="address">
+                                                    <span>آدرس: </span>
+                                                    <span>تهـران، کیلومتـر ۲۰ جـاده دماونـد، پـارک فنـاوری پردیـس مجتمـع سـتادی سـراج، طبقـه سـوم، واحـد ۱۴۲</span>
+                                                </div>
+                                                <div class="tell">
+                                                    <span>شماره تماس: </span>
+                                                    <span>۰۲۱<strong>۷۶۲۵۰۱۰۹</strong></span>
+                                                    <span>۰۲۱<strong>۷۶۲۵۰۱۰۹</strong></span>
+                                                </div>
+                                                <div class="email">
+                                                    <span>ایمیل:</span>
+                                                    <span>info@boom-gard.com</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <section class="res-search mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+                            <div class="mdc-layout-grid__inner">
+
+                                <div class="mdc-layout-grid__cell--span-6-desktop">
+                                    <div class="cirt">
+
+                                        <div class="title-cirt">
+                                            <div class="icon">
+                                                <i class="icon-verified-account-96"></i>
+                                            </div>
+                                            <h6>گواهینامه ها</h6>
+                                        </div>
+                                        <div class="pic-cirt">
+                                            <div class="pic"><img src="images/namad1.png"></div>
+                                            <div class="pic"><img src="images/namad2.png"></div>
+                                            <div class="pic"><img src="images/miras.png"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="size-txt mdc-layout-grid__cell--span-6-desktop">
+
+                                    <div class="title-cirt">
+
+                                        <div class="icon">
+                                            <i class="material-icons">search</i>
+                                        </div>
+
+                                        <h6>جستجو های متداول</h6>
+                                    </div>
+                                    <div class="pic-cirt">
+                                        <ul class="name-city">
+                                            <li><a href="#">ویلا‌های اطراف تهران</a></li>
+                                            <li><a href="#">اجاره ویلا در تهران</a></li>
+                                            <li><a href="#">اجاره ویلا در بومهن</a></li>
+                                            <li><a href="#">اجاره ویلا در دماوند</a></li>
+                                            <li><a href="#">اجاره ویلا در لواسان</a></li>
+                                            <li><a href="#">اجاره ویلا در طالقانی</a></li>
+                                            <li><a href="#">اجاره ویلا در کردان</a></li>
+                                            <li><a href="#">اجاره ویلا در فیروز کوه</a></li>
+                                        </ul>
+                                        
+                                        <ul class="name-city">
+                                            <li><a href="#">ویلا‌های جنوب</a></li>
+                                            <li><a href="#">اجاره ویلا در تهران</a></li>
+                                            <li><a href="#">اجاره ویلا در بومهن</a></li>
+                                            <li><a href="#">اجاره ویلا در دماوند</a></li>
+                                            <li><a href="#">اجاره ویلا در لواسان</a></li>
+                                            <li><a href="#">اجاره ویلا در طالقانی</a></li>
+                                            <li><a href="#">اجاره ویلا در کردان</a></li>
+                                            <li><a href="#">اجاره ویلا در فیروز کوه</a></li>
+                                        </ul>
+
+                                        <ul class="name-city">
+                                            <li><a href="#">ویلا‌های شمال</a></li>
+                                            <li><a href="#">اجاره ویلا در تهران</a></li>
+                                            <li><a href="#">اجاره ویلا در بومهن</a></li>
+                                            <li><a href="#">اجاره ویلا در دماوند</a></li>
+                                            <li><a href="#">اجاره ویلا در لواسان</a></li>
+                                            <li><a href="#">اجاره ویلا در طالقانی</a></li>
+                                            <li><a href="#">اجاره ویلا در کردان</a></li>
+                                            <li><a href="#">اجاره ویلا در فیروز کوه</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <section class="copy-right-boomgrd mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+                            <div class="mdc-layout-grid__inner">
+
+                                <div class="mdc-layout-grid__cell--span-9-desktop mdc-layout-grid__cell--span-6-tablet">
+                                    <div class="copy-right">
+                                        <p>استفاده از مطالب سرویس اینترنتی بوم‌گرد فقط برای <strong>مقاصد غیرتجاری</strong> و با ذکر منبع بلامانع است.</p>
+                                        <p>تمامی حقوق مادی و معنوی این سرویس (وب سایت و اپلیکیشن های موبایل) متعلق به <strong>شرکت ایده گذر پردیس</strong> است.</p>
+                                    </div>
+                                </div>
+
+                                <div class="mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-2-tablet">
+                                    <div class="logo-soc mdc-layout-grid_cell--span-12-desktop">
+                                        <div class="logo-min-boom mdc-layout-grid_cell--span-12-desktop">
+                                            <span><i class="icon-logotype"></i></span>
+                                            <span><i class="icon-New-2019-Logo"></i></span>
+                                        </div>
+                                        <div class="soctial-icon mdc-layout-grid_cell--span-12-desktop">
+                                            <a href="#"><i class="icon-Telegram"></i></a>
+                                            <a href="#"><i class="icon-instagram"></i></a>
+                                            <a href="#"><i class="icon-twitter"></i></a>
+                                            <a href="#"><i class="icon-Aparat"></i></a>
+                                            <a href="#"><i class="icon-Linkdin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="js/main-pg.js"></script>
+
+<!-- Jquery Main -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/tilt.jquery.js"></script>
+<!-- Site JS -->
+<script type="text/javascript" src="js/site.js"></script>
+
+</html>

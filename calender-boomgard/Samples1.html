@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Persian DateTime</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="fonts/IRANSans/css/IRANSans.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Open_Sans/OpenSans.css">
+
+    <link rel="stylesheet" href="jquery.md.bootstrap.datetimepicker.style.css" />
+    <link rel="stylesheet" href="calendar-boomgard.css" />
+
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="input-group-prepend">
+        <span class="input-group-text cursor-pointer abs" data-toggle="popover" data-trigger="focus">
+            <input type="text" id="inputDate1" class="in-date form-control" data-toggle="popover" placeholder="Persian Calendar Text" aria-label="date1" aria-describedby="date1" value="" data-container=".calendar">
+            <input type="text" id="inputDate1-1" class="out-date form-control" placeholder="Persian Calendar Date" aria-label="date11" aria-describedby="date11" value="" data-toggle="popover">
+        </span>
+    </div>
+
+    <input type="hidden" id="fromDate" />
+    <input type="hidden" id="toDate" />
+
+
+    <script src="jquery.md.bootstrap.datetimepicker.js" type="text/javascript"></script>
+    <script src="gen-calender.js"></script>
+
+</body>
+
+</html>

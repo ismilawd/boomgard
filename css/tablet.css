@@ -1,0 +1,510 @@
+.header{
+
+    position: relative;
+    height: auto;
+    padding-bottom: 50px;
+}
+.box-search{
+
+    margin-top: 0;
+}
+.header .main-header .menu{
+
+    padding: 20px 20px 0;
+}
+.main::before,
+.main::after,
+.main .mdc-layout-grid__inner::before{
+
+    display: none;
+}
+.header .main-header .menu .menu-main .menu-main .dl-logo::before,
+.header .main-header .menu .menu-main::before{
+
+    transform: rotate(10deg);
+}
+.header .main-header .menu .titles{
+
+    width: 22%;
+}
+.header .main-header .menu .dl-app{
+
+    width: 45%;
+}
+.header .main-header .pic-main .pic-page .image-main::before{
+
+    width: 50%;
+    height: 76%;
+    right: -40px;
+}
+.box-search .search-info .title{
+
+    width: 48%;
+    height: auto;
+    top: 0;
+}
+.main-header .box-search .search-info .res-search{
+
+    height: auto;
+    padding-bottom: 20px;
+    top: 0;
+    float: left;
+    left: 6%;
+    right: auto;
+}
+.main-header .box-search .search-info .res-search .header-search::before{
+
+    width: 120%;
+}
+.box-search .search-info{
+
+    display: flex;
+}
+.box-search .search-info .box{
+
+    width: 100%;
+}
+.box-search .search-info .title span:nth-child(2),
+.box-search .search-info .title span:last-child{
+
+    padding-right: 0;
+}
+.main .main-body{
+
+    padding: 0;
+}
+.main .introduction .title-intro h4::before{
+
+    right: 8%;
+}
+.main .introduction .title-intro h4::after{
+
+    left: 8%;
+}
+.main .popular .bx > .mdc-layout-grid__inner{
+
+    display: flex;
+    flex-wrap: nowrap;
+    grid-gap: var(--mdc-layout-grid-gutter-desktop, 16px);
+    --mdc-layout-grid-gutter-desktop: 16px;
+}
+.main .popular .bx > .mdc-layout-grid__inner .box-pop{
+
+    width: 32%;
+}
+.main .popular .bx > .mdc-layout-grid__inner .box-pop,
+.main .popular .mdc-layout-grid .title-popular,
+.main .popular .mdc-layout-grid .btn-popular{
+
+    position: relative;
+    z-index: 9999;
+}
+.more-view .city .mdc-layout-grid__inner .city-fam{
+
+    width: 23%;
+    margin-bottom: 20px;
+    height: 210px;
+}
+.more-view .dawnload-app .dl-app::before{
+
+    width: 650px;
+}
+.more-view .dawnload-app .dl-title-app .title-p h3{
+
+    font-size: 32px;
+}
+.more-view .dawnload-app .dl-title-app .title-p p{
+
+    font-size: 16px;
+}
+.footer .main-footer .about-us .text-about,
+.footer .main-footer .about-us .title-about h6,
+.footer .main-footer .info-about-us,
+.footer .main-footer .res-search,
+.footer .main-footer .copy-right-boomgrd{
+
+    padding: 0 20px;
+}
+.footer .main-footer .info-about-us > .mdc-layout-grid__inner{
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+.footer .main-footer .info-about-us .mdc-layout-grid__cell--span-3-desktop{
+
+    width: 35%;
+}
+.footer .main-footer .res-search{
+
+    padding-bottom: 70px;
+}
+.footer .main-footer .res-search::before{
+
+    background: linear-gradient(130deg, #242f35 20%, #2c373d 100%);
+}
+.footer .main-footer .info-about-us{
+
+    padding-bottom: 50px;
+}
+.footer .main-footer .res-search .cirt,
+.footer .main-footer .res-search .size-txt{
+
+    right: 0;
+}
+.footer .main-footer .res-search .cirt .pic-cirt{
+
+    width: 100%;
+    justify-content: center;
+}
+.footer .main-footer .res-search .mdc-layout-grid__cell--span-6-desktop{
+
+    width: 100%;
+}
+.footer .main-footer .res-search > .mdc-layout-grid__inner{
+
+    display: flex;
+}
+.footer .main-footer .res-search .cirt .pic-cirt .pic{
+
+    width: 15%;
+    height: auto;
+}
+.footer .main-footer .copy-right-boomgrd{
+
+    padding-bottom: 40px;
+}
+.footer .main-footer .copy-right-boomgrd .copy-right p{
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+.footer .main-footer .res-search .title-cirt h6{
+
+    font-size: 18px;
+}
+.footer .main-footer .res-search .cirt .title-cirt,
+.footer .main-footer .res-search .size-txt .title-cirt{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .main-footer .res-search .icon i{
+
+    position: relative !important;
+    right: -10px !important;
+    top: 3px !important;
+}
+.Residence-page.Residence-header .mdc-layout-grid{
+
+    padding: 0 !important;
+}
+.Residence-page.Residence-header .gallery{
+
+    --mdc-layout-grid-gutter-tablet: 2px !important;
+}
+body .Residence-page.Residence-header .gallery .mdc-button.all-pic{
+
+    left: 15px;
+    bottom: 55px;
+}
+body .Residence-page.Residence-header .top-header{
+
+    padding: 5px 6%;
+}
+body .Residence-page.Residence-main .top{
+
+    width: 95%;
+    z-index: 99;
+}
+body .Residence-page.Residence-main .top .description .facility .item{
+
+    width: 25%;
+}
+.Residence-page.Residence-main .gallery-popup .gallery,
+.Residence-page.Residence-main .register-popup .signin-popup{
+
+    bottom: auto;
+    width: 90%;
+    padding: 40px 0;
+    top: 80%;
+}
+.Residence-page.Residence-main .gallery-popup .gallery.show,
+.Residence-page.Residence-main .register-popup .signin-popup.show{
+
+    top: 15%;
+}
+.Residence-page.Residence-main .gallery__list{
+
+    width: 23%;
+}
+.Residence-page.Residence-main .gallery__bigImage{
+
+    width: 76%;
+}
+.Residence-page.Residence-main .gallery-popup .mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools{
+
+    left: 10px;
+}
+.Residence-page.Residence-main .gallery__bigImage a{
+
+    width: 95%;
+}
+.Residence-page.Residence-main .gallery__prev{
+
+    left: -15px;
+}
+.Residence-page.Residence-main .gallery__next{
+
+    right: -15px;
+}
+.Residence-page.Residence-main .register-popup .signin-popup{
+
+    height: auto;
+}
+.Residence-page.Residence-main .register-popup .client-info,
+.Residence-page.Residence-main .register-popup .download{
+
+    grid-column-end: span 12;
+}
+.Residence-page.Residence-main .register-popup .triangle::before{
+
+    top: 70px;
+    transform: rotate(-85deg);
+    box-shadow: 0 0 12px -2px #263238;
+}
+.Residence-page.Residence-main .register-popup .contact-us{
+
+    z-index: 99;
+    background-color: #f4f5f7;
+}
+.Residence-page.Residence-main .register-popup .client-info .profile-setup .wrapper{
+
+    padding: 0;
+    width: 100%;
+}
+.Residence-page.Residence-main .register-popup .client-info .profile-setup{
+
+    padding: 0 50px;
+}
+.Residence-page.Residence-main .register-popup .client-info .profile-setup > div,
+.Residence-page.Residence-main .register-popup .client-info .credintial{
+
+    width: 100%;
+}
+.Residence-page.Residence-main .register-popup .client-info .profile-setup .title,
+.Residence-page.Residence-main .register-popup .client-info .profile-setup .title .header{
+
+    padding: 0;
+}
+.Residence-page.Residence-main .register-popup .client-info .credintial .next button{
+
+    width: 30%;
+}
+.Residence-page.Residence-main .register-popup .download{
+
+    height: 250px;
+}
+.Residence-page.Residence-main .register-popup .download .image{
+
+    width: 500px;
+    right: -4%;
+    top: 20%;
+}
+.Residence-page.Residence-main .register-popup .intro{
+
+    width: 54%;
+}
+.Residence-page.Residence-main .register-popup .button{
+
+    left: 14%;
+    bottom: 14%;
+}
+#firstLevel.hide{
+
+    left: -120%;
+}
+#secondLevel.show{
+
+    left: 25px;
+}
+.Residence-page.Residence-main .register-popup .profile-setup .second-level .phone-number{
+
+    padding-top: 20px;
+}
+.Residence-page.Residence-main .register-popup .profile-setup .wrapper .boomgard-logo i{
+
+    font-size: 65px;
+}
+.Residence-page.Residence-main .register-popup .profile-setup .wrapper .logo-type{
+
+    margin-left: 1vh;
+    padding-top: 1vh;
+}
+.Residence-page.Residence-main .register-popup .profile-setup .wrapper .logo-type span{
+
+    font-size: 7px;
+}
+body .Residence-page.Residence-header .fixed-box .reserve-now,
+body .Residence-page.Residence-header .fixed-box .residence-infromation,
+body .Residence-page.Residence-header .fixed-box .price-tag,
+body .Residence-page.Residence-header .fixed-box::before,
+.Residence-page.Residence-main .popup .picture,
+.Residence-page.Residence-main .popup .description.mCustomScrollbar #mCSB_1_scrollbar_vertical{
+
+    display: none !important;
+}
+body .Residence-page.Residence-header .fixed-box .client-info{
+
+    width: 60%;
+}
+body .Residence-page.Residence-header .fixed-box .reserve-req{
+
+    width: 30%;
+}
+body .Residence-page.Residence-header .fixed-box .client-data .number-popup{
+
+    left: 24.5%;
+}
+#popup > .mdc-layout-grid__inner{
+
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.Residence-page.Residence-main .popup{
+
+    height: auto;
+    bottom: auto;
+    top: 80%;
+}
+.Residence-page.Residence-main #popup.show{
+
+    top: 5%;
+}
+.Residence-page.Residence-main .popup .header{
+
+    width: 100%;
+    padding: 15px 0;
+    justify-content: center;
+}
+.Residence-page.Residence-main .popup .header .close{
+
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.Residence-page.Residence-main .popup .header .residence-name{
+
+    margin: 0;
+    font-size: 16px;
+}
+.Residence-page.Residence-main .popup .description{
+
+    margin: 0;
+    height: auto;
+    padding: 50px 0;
+}
+.Residence-page.Residence-main .popup .contact-us{
+
+    width: 100%;
+    background-color: #f4f5f7;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.search-page.search-main .mdc-layout-grid{
+
+    --mdc-layout-grid-margin-tablet: 0;
+}
+.search-page.search-main .popular, .search-page.search-main .map{
+
+    width: 100%;
+}
+.search-page.search-header .top-header .switch-bnt,
+.search-page.search-header .top-header .left{
+
+    padding: 0;
+}
+.search-page.search-main .cards .mdc-layout-grid__inner{
+
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.search-page.search-main .popular .pagination-fixt{
+
+    left: 0;
+    width: 100%;
+}
+.map-dis.search-page .cards{
+
+    width: 100%;
+}
+.search-page.search-main .map{
+
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+.search-page.map-dis .map{
+
+    opacity: 1;
+    visibility: visible;
+}
+.search-page.search-main .popular{
+
+    opacity: 1;
+    visibility: visible;    
+    transition: all 0.4s;
+}
+.search-page.map-dis .popular{
+
+    opacity: 0;
+    visibility: hidden;
+}
+.search-page.search-main .popular .scroll-parts{
+
+    padding-bottom: 60px;
+}
+.search-page.search-header .top-header .travel .filters .filter-popup{
+
+    left: -160px;
+}
+.search-page.search-header .top-header .travel .filters .filter-popup::before{
+
+    right: 47%;
+}
+.search-page.search-header .top-header .travel .number-popup{
+
+    left: -12px;
+}
+.search-page.search-header .top-header .travel .number-popup::before{
+
+    right: 47%;
+}
+.search-page.search-header .top-header .travel .destination-popup::before{
+
+    right: 30px;
+}
+.search-page.search-main .box-pop .popular-inner .pic .owl-carousel .owl-nav{
+
+    opacity: 1;
+}
+.box-pop .popular-inner .pic .owl-carousel .owl-nav i{
+
+    transform: scale(1);
+}
+.side-pages-header.Residence-header .mdc-layout-grid{
+
+    padding: 5px 0 !important;
+}
+.support-main .support-container .support-difficulty{
+
+    padding: 25px 125px 250px 60px;
+}

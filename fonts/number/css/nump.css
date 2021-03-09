@@ -1,0 +1,7 @@
+@font-face {
+	font-family: nump;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/ttf/irsans.ttf') format('truetype'),
+	url('../fonts/ttf/irsansb.ttf') format('truetype');
+}

@@ -1,0 +1,457 @@
+.calendar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar .input-group-prepend {
+    width: 49%;
+    position: relative;
+}
+
+.calendar .input-group-prepend span {
+    cursor: text;
+    /* position: absolute;
+    color: transparent; */
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
+    /* width: 100%; */
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.popover-boomgard {
+    border: none;
+}
+
+.popover-boomgard .table-striped tbody tr:nth-of-type(2n+1), .popover-boomgard .mds-bootstrap-persian-datetime-picker-container table table {
+    background-color: #f4f5f7 !important;
+}
+
+.popover-boomgard .mds-bootstrap-persian-datetime-picker-container table table tbody.days tr>td:first-child {
+    padding-right: 40px;
+}
+
+.popover-boomgard .mds-bootstrap-persian-datetime-picker-container table table tbody.days tr>td:last-child {
+    padding-left: 40px;
+}
+
+.popover-boomgard .mds-bootstrap-persian-datetime-picker-container .btn, .popover-boomgard .mds-bootstrap-persian-datetime-picker-container .btn:active, .popover-boomgard .mds-bootstrap-persian-datetime-picker-container .btn:focus {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.popover-boomgard .table-striped .table-borderless tr {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 15px 0 0;
+    height: 70px;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .year-head {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .year-head .btn-light {
+    font-weight: 300;
+    color: #90a4ae;
+    font-size: 16px;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .month-head {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .month-head .btn-light {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #263238;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .next-month {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .next-month .btn-light, .popover-boomgard .table-striped .table-borderless tr .prev-month .btn-light, .popover-boomgard .table-striped .table-borderless tr .btn[disabled] {
+    color: #becacf;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .prev-month {
+    position: absolute;
+    left: 50px;
+    top: 35px;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .btn[disabled] {
+    opacity: 0.5;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .next-month .btn-light span:hover, .popover-boomgard .table-striped .table-borderless tr .prev-month .btn-light span:hover {
+    color: #fe3257;
+    transition: all .2s;
+}
+
+.popover-boomgard .table-striped .table-borderless tr .btn[disabled]:hover {
+    color: #becacf;
+}
+
+.popover-boomgard table table tbody.days tr:first-child>td {
+    padding: 0 3px;
+    color: #263238 !important;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+.popover-boomgard table table tbody.days td[data-day]>span {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #263238;
+}
+
+.popover-boomgard table table tbody.days td[data-day]>span>i {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+}
+
+.popover-boomgard table table tbody.days td[data-day][data-today], .popover-boomgard table table tbody.days td[data-nm]:hover, .popover-boomgard table table tbody.days td[data-pm]:hover, .popover-boomgard table table tbody.days td[data-special-date]:hover, .popover-boomgard table table tbody.days td[data-day]:hover {
+    background-color: transparent !important;
+    opacity: 1;
+}
+
+.popover-boomgard table table tbody.days td[data-day][data-today]>span {
+    border: 1px solid #fe3257;
+}
+
+.popover-boomgard table table tbody.days td[data-special-date] {
+    background-color: transparent;
+    border: none;
+}
+
+.popover-boomgard table table tbody.days td[data-special-date]>span {
+    background-color: #e3e7eb;
+}
+
+.popover-boomgard table table tbody.days td[disabled] {
+    opacity: 1;
+}
+
+.popover-boomgard table table tbody.days td[disabled]>span {
+    position: relative;
+}
+
+.popover-boomgard table table tbody.days td[disabled]>span>i {
+    opacity: 0.2;
+}
+
+.popover-boomgard table table tbody.days td[disabled][data-special-date]>span:after {
+    content: "";
+    width: 1px;
+    background-color: #c2ccd0;
+    height: 18px;
+    transform: rotate(35deg);
+    position: absolute;
+    top: 6px;
+    right: 14px;
+}
+
+.popover-boomgard table table tbody.days td.selected-range-days {
+    background-color: #ff2c67;
+}
+
+.popover-boomgard table table tbody.days td.range-start {
+    background-color: #ff2c67;
+    border-radius: 0 100px 100px 0;
+}
+
+.popover-boomgard table table tbody.days td.range-end {
+    background-color: #ff2c67;
+    border-radius: 100px 0 0 100px;
+}
+
+.popover-boomgard table table tbody.days td.selected-range-days>span {
+    color: #fff;
+}
+
+.popover-boomgard table table tbody.days td.selected-range-days.text-danger>span, .popover-boomgard table table tbody.days td.selected-range-days-start-end.text-danger>span {
+    color: #263238;
+}
+
+.popover-boomgard table table tbody.days td.selected-range-days:hover, .popover-boomgard table table tbody.days td.circle.range-start, .popover-boomgard table table tbody.days td.selected-range-days-start-end {
+    background-color: #ff2c67 !important;
+}
+
+.popover-boomgard table table tbody.days td:hover>span, .popover-boomgard table table tbody.days td.selected-range-days:hover>span, .popover-boomgard table table tbody.days td.range-start:hover>span {
+    background-color: #eceff1;
+    color: #263238;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days td[data-day] {
+    transition: none !important;
+}
+
+.circle>span, .circle>span:hover {
+    width: 30px;
+    height: 30px;
+    background-color: #ff2c67 !important;
+    border-radius: 100%;
+}
+
+.popover-boomgard {
+    display: none;
+}
+
+.popover-boomgard.active {
+    display: block;
+}
+
+.input-group-text.cursor-pointer.abs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popover-boomgard table table tbody.days td[data-day]>span>i {
+    font-family: IRANSans, Open_Sans !important;
+    font-size: 15px;
+}
+
+.popover-boomgard .mds-bootstrap-persian-datetime-picker-container table table {
+    display: table;
+    width: 100%;
+}
+
+.popover-boomgard .mds-bootstrap-persian-datetime-picker-container table table span.material-icons {
+    font-size: 26px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days {
+    position: relative;
+    top: -5px;
+    width: 100%;
+}
+
+.popover-boomgard {
+    background-color: #f4f5f7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px -6px #999;
+    position: absolute;
+    width: 380px;
+    left: 10px !important;
+    top: 230px !important;
+    transform: unset !important;
+    will-change: unset !important;
+    max-width: none;
+}
+
+.mds-bootstrap-persian-datetime-picker-container {
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+}
+
+.popover-boomgard.left-ps {
+    left: -130px !important;
+}
+
+.popover-boomgard>span {
+    position: absolute;
+    top: -22px;
+    right: 100px;
+    z-index: 99;
+    color: #f4f5f7;
+    font-size: 44px;
+    transform: scale(-1);
+    text-shadow: 0px 5px 5px #ddd;
+    user-select: none;
+}
+
+.popover-boomgard>span::before {
+    content: "";
+    background: url('../images/Icons\ &\ Stuff/cal-arrow.png') no-repeat center center / 40px;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    z-index: 999;
+    top: 13px;
+    transform: scaleY(-1);
+    right: 12px;
+}
+
+.popover-boomgard .c-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #eceff1;
+    border-top: 1px solid #cfd8dc;
+    border-radius: 0 0 15px 15px;
+}
+
+.popover-boomgard .c-tools button {
+    letter-spacing: 0px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.popover-boomgard .c-tools>span {
+    font-weight: 900;
+    color: #90a4ae;
+    font-size: 16px;
+}
+
+.gray-bnt.mdc-button {
+    color: #90a4ae;
+}
+
+.gray-bnt.mdc-button.mdc-ripple-no-line .mdc-button__ripple::before, .gray-bnt.mdc-button.mdc-ripple-no-line .mdc-button__ripple::after {
+    background: #263832;
+}
+
+.mds-bootstrap-persian-datetime-picker-container>table {
+    width: 101%;
+    position: relative;
+    right: -2px;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days td[data-day] {
+    position: relative;
+    width: 40px;
+    height: 31px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 3px;
+}
+
+.popover-boomgard .popover-body {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.date-in-out .mdc-floating-label.up-lbl {
+    transform: translateY(-27.75px) scale(0.95);
+    background-color: #f4f5f7;
+    padding: 0 10px;
+}
+
+.popover-boomgard table table .range-start>span {
+    color: #fff !important;
+}
+
+.popover-boomgard table table .range-end>span {
+    position: relative;
+    background-color: #fff !important;
+    color: #ff2c67 !important;
+}
+
+.popover-boomgard table table .range-end, .popover-boomgard table table tbody.days td.selected-range-days.range-end:hover {
+    background-color: transparent !important;
+}
+
+.popover-boomgard table table .range-end::before,
+.popover-boomgard .mds-bootstrap-persian-datetime-picker-container table table tbody.days tr>td.range-start:first-child::before {
+    content: "";
+    background-color: #ff2c67;
+    position: absolute;
+    width: 42px;
+    height: 33px;
+    right: 0px;
+    top: 0;
+    border-radius: 100px 0 0 100px;
+}
+
+.popover-boomgard table table .range-empty, .popover-boomgard table table tbody.days td[data-nm].range-empty:hover {
+    background-color: #ff2c67 !important;
+    opacity: 1 !important;
+}
+
+.popover-boomgard table table tbody.days td.text-danger>span {
+    color: #fe3257;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days>tr>td:nth-child(7).range-end::before {
+    width: 32px;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days>tr>td:nth-child(1).range-end::before {
+    width: 71px;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days td[data-nm] {
+    padding: 0;
+}
+
+.popover-boomgard .mds-bootstrap-persian-datetime-picker-container table table tbody.days tr>td.range-start:first-child{
+
+    background-color: transparent !important;
+}
+.popover-boomgard .mds-bootstrap-persian-datetime-picker-container table table tbody.days tr>td.range-start:first-child::before{
+
+    right: 35px;
+    border-radius: 0 100px 100px 0;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days td.range-start:hover{
+    
+    background-color: #ff2c67;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days td.selected-range-days ~ td[data-nm=""]{
+    background-color: #ff2c67 !important;
+    opacity: 1;
+}
+
+.mds-bootstrap-persian-datetime-picker-container table table tbody.days td.range-end ~ td[data-nm=""]{
+    
+    background-color: transparent!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-============================ //end// ==========================-*/

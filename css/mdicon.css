@@ -52,7 +52,7 @@
 }
 
 .material-icons-outlined {
-  font-family: 'Material Icons Outlined' !important;
+  font-family: 'Material Icons Outlined';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -68,7 +68,7 @@
 }
 
 .material-icons-round {
-  font-family: 'Material Icons Round' !important;
+  font-family: 'Material Icons Round';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -84,7 +84,7 @@
 }
 
 .material-icons-sharp {
-  font-family: 'Material Icons Sharp' !important;
+  font-family: 'Material Icons Sharp';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;

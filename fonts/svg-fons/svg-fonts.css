@@ -198,9 +198,11 @@
 }
 .icon-instagram:before {
   content: "\e936";
+  color: #f5f5f5;
 }
 .icon-Linkdin:before {
   content: "\e937";
+  color: #fff;
 }
 .icon-logotype:before {
   content: "\e938";
@@ -213,9 +215,11 @@
 }
 .icon-Telegram:before {
   content: "\e93b";
+  color: #fff;
 }
 .icon-twitter:before {
   content: "\e93c";
+  color: #fff;
 }
 .icon-verified-pay:before {
   content: "\e93d";
@@ -225,6 +229,7 @@
 }
 .icon-Aparat:before {
   content: "\e93f";
+  color: #fff;
 }
 .icon-BoomGard:before {
   content: "\e940";

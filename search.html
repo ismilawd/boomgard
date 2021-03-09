@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html prefix="og:">
+
+<head prefix="my_namespace: http://congress.eccim.com/#">
+    <!-- Public META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- /Public META -->
+
+    <!-- Title -->
+    <title>جستجو</title>
+    <link rel="shortcut icon" href="" />
+    <!-- /Title -->
+
+    <!-- SEO META -->
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta content="logo" property="og:image" />
+    <meta content="" property="og:image:secure_url" />
+    <meta property="og:image:type" content="" />
+    <meta property="og:image:width" content="" />
+    <meta property="og:image:height" content="" />
+    <meta content="" name="" />
+    <!-- /SEO META -->
+
+    <!-- Required styles for MDC Web -->
+    <link rel="stylesheet" href="css/material-components-web.min.css" />
+
+    <!-- Web Fonts Css -->
+    <link rel="stylesheet" type="text/css" href="fonts/IRANSans/css/IRANSans.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/Open_Sans/OpenSans.css" />
+    <link rel="stylesheet" href="css/mdicon.css" />
+
+    <!-- Web font-icon -->
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/svg-fons/svg-fonts.css" /> -->
+
+    <!-- Owl Carousel Css -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+
+    <!-- Web font-icon -->
+    <link rel="stylesheet" type="text/css" href="./fonts/svg-fons/svg-fonts.css">
+
+    <!-- Template Pc Css -->
+    <link rel="stylesheet" type="text/css" href="css/template.css" />
+
+    <!-- large Monitor Css -->
+    <link rel="stylesheet" type="text/css" href="css/largeMonitors.css" />
+
+    <!-- Tablet Css -->
+    <link rel="stylesheet" media="only screen and (min-width:650px) and (max-width: 1000px)" href="css/tablet.css" />
+
+    <!-- Mobile Css -->
+    <link rel="stylesheet" media="only screen and (min-width: 0px) and (max-width: 640px)" href="css/mobile.css" />
+
+    <!-- Required MDC Web JavaScript library -->
+    <script src="js/material-components-web.min.js"></script>
+
+    <!-- Required Neshan Map Styles-->
+    <link href="https://static.neshan.org/sdk/leaflet/1.4.0/leaflet.css" rel="stylesheet" type="text/css">
+
+    <!-- Required Neshan Map Js-->
+    <script src="https://static.neshan.org/sdk/leaflet/1.4.0/leaflet.js" type="text/javascript"></script>
+
+    <!-- Custom Map Js-->
+
+    <!-- nouislider Slider -->
+    <link rel="stylesheet" type="text/css" href="css/range-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
+
+</head>
+
+<body>
+    <header class="search-page search-header">
+        <section onclick="Close()" id="blacked" class="blacked ">
+        </section>
+        <div class="top-header">
+            <div id="over_ly"></div>
+            <div class="menu mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+
+                    <div class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet right">
+                        <a href="#">
+                            <div class="logo">
+                                <i class="icon-BoomGard"></i>
+                                <div class="titles">
+                                    <span class="main-title"><img src="./svg/logotype.svg"></span>
+                                    <span class="side-title">سرویس اجاره‌ اقامتگاه</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="search">
+                            <button class="mdc-button search-button">
+                                <span class="mdc-button__ripple"></span> جستجوی اقامتگاه
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet left">
+
+                        <button class="mdc-button host">
+                            <span class="mdc-button__ripple"></span> میزبان شوید!
+                        </button>
+                        <div id="account-popup-button" class="account-owner">
+                            <span>سام میرزائی</span>
+                            <div class="pic">
+                                <img src="./images/Sam Mirzaei.jpg">
+                            </div>
+                            <div id="account-popup" class="account-popup">
+                                <div class="mdc-layout-grid__inner">
+                                    <div class="mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--span-3-tablet links">
+                                        <div class="tabs">
+                                            <i class="material-icons">account_circle</i>
+                                            <a href="#">
+                                                <span>مشاهده پروفایل</span>
+                                            </a>
+                                        </div>
+                                        <div class="tabs">
+                                            <i class="material-icons">home</i>
+                                            <a href="#">
+                                                <span>اقامتگاه ها</span>
+                                            </a>
+                                        </div>
+                                        <div class="tabs">
+                                            <i class="material-icons">place</i>
+                                            <a href="#">
+                                                <span>رزرو ها</span>
+                                            </a>
+                                        </div>
+                                        <div class="tabs messages">
+                                            <i class="material-icons">place</i>
+                                            <a href="#">
+                                                <span>پیام ها</span>
+                                            </a>
+                                            <span class="notification">
+                                                2
+                                            </span>
+                                        </div>
+                                        <div class="tabs">
+                                            <i class="material-icons">place</i>
+                                            <a href="#">
+                                                <span>تراکنش ها</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="mdc-layout-grid__cell--span-7-desktop mdc-layout-grid__cell--span-5-tablet request">
+                                        <h3>وضعیت درخواست ها</h3>
+                                        <div class="info">
+                                            <div class="residences">
+                                                <span class="title">عنوان</span>
+                                                <span class="title sub">خونه‌باغ علی‌بابا</span>
+                                                <span class="title sub">اجاره ویلای کرج</span>
+                                            </div>
+                                            <div class="conditioning">
+                                                <span class="condition">وضعیت</span>
+                                                <span class="condition waiting">در انتظار تایید</span>
+                                                <span class="condition accepted">تایید شده</span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel mdc-layout-grid">
+                <div class="mdc-layout-grid__inner select-flex">
+                    <div class="mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet travel-dependencies">
+                        <div class="destined-city">
+                            <button id="msd_bnt" onclick="DestinationPopup()" class="mdc-button mdc-button--outlined destination">
+                                <span class="mdc-button__ripple"></span>
+                                <span class="where">مقصد</span>
+                                <span class="double">:</span>
+                                <span class="city"></span>
+                            </button>
+                            <div id="destinationPopup" class="destination-popup ">
+
+                                <div class="search-input">
+                                    <input placeholder="جستجوی شهر">
+                                    <i class="material-icons">
+                                        close
+                                    </i>
+                                </div>
+                                <div class=" scroll mCustomScrollbar">
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نرمین</span>
+                                            <div class="residence">
+                                                <span class="city"> استان اردبیل -</span>
+                                                <span class="number"> 24 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نهاوند</span>
+                                            <div class="residence">
+                                                <span class="city"> استان همدان -</span>
+                                                <span class="number"> 2 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نهبندان</span>
+                                            <div class="residence">
+                                                <span class="city"> استان خراسان جنوبی -</span>
+                                                <span class="number"> 12 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نوبران</span>
+                                            <div class="residence">
+                                                <span class="city"> استان مرکزی</span>
+                                                <span class="number"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نرمین</span>
+                                            <div class="residence">
+                                                <span class="city"> استان اردبیل -</span>
+                                                <span class="number"> 24 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نرمین</span>
+                                            <div class="residence">
+                                                <span class="city"> استان اردبیل -</span>
+                                                <span class="number"> 24 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نرمین</span>
+                                            <div class="residence">
+                                                <span class="city"> استان اردبیل -</span>
+                                                <span class="number"> 24 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نرمین</span>
+                                            <div class="residence">
+                                                <span class="city"> استان اردبیل -</span>
+                                                <span class="number"> 24 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نرمین</span>
+                                            <div class="residence">
+                                                <span class="city"> استان اردبیل -</span>
+                                                <span class="number"> 24 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box places">
+                                        <i class="material-icons">
+                                            apartment
+                                        </i>
+                                        <div class="residence-describtion">
+                                            <span class="name">نرمین</span>
+                                            <div class="residence">
+                                                <span class="city"> استان اردبیل -</span>
+                                                <span class="number"> 24 اقامتگاه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="mdc-button mdc-button--outlined calender">
+                            <span class="mdc-button__ripple"></span>
+                            <span class="where"><strong>19</strong> خرداد -</span>
+                            <span class="city"><strong>30</strong> خرداد</span>
+                        </button>
+                        <div class="number">
+                            <button id="nmb_bnt" onclick="numberPopup()" class="mdc-button mdc-button--outlined number-button">
+                                <span class="mdc-button__ripple"></span>
+                                <span class="fixed">نفرات</span>
+                                <span class="double">:</span>
+                                <span class="variable"></span>
+
+                            </button>
+                            <div id="numberPopup" class="number-popup">
+                                <div class="describtion">
+                                    <h3>تعداد نفرات</h3>
+                                    <p>هزینه اقامت کودکان بین 3 تا 12 سال نیم بها قیمت نفرات اضافه محاسبه میشود!</p>
+                                </div>
+                                <div class="number-of-people">
+                                    <div class="people">
+                                        <div class="type">
+                                            <i class="material-icons">wc</i>
+                                            <span>بزرگسال</span>
+                                        </div>
+                                        <div class="slider slide-1">
+                                            <div class="incrementer">
+                                                <button onclick="add()" class="mdc-button mdc-button--raised up">
+                                                    <span class="positive">+</span>
+                                                </button>
+                                                <button class="value">
+                                                    <span>0</span>
+
+                                                </button>
+
+                                                <button onclick="remove()" class="mdc-button mdc-button--raised down">
+                                                    <span class="negative">_</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="people">
+                                        <div class="type">
+                                            <i class="material-icons">sports_kabaddi</i>
+                                            <span>خردسال</span>
+                                        </div>
+                                        <div class="slider slide-2">
+                                            <div class="incrementer">
+                                                <button onclick="add2()" class="mdc-button mdc-button--raised up">
+                                                    <span class="positive">+</span>
+                                                </button>
+                                                <button class="value">
+                                                    <span>0</span>
+
+                                                </button>
+
+                                                <button onclick="remove2()" class="mdc-button mdc-button--raised down">
+                                                    <span class="negative">_</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finalization">
+                                    <div class="chosen">
+                                        <span class="number to-put"> 0</span>
+                                        <span class="number">نفر</span>
+                                        <span class="choose">انتخاب شده</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="mdc-button clean " id="clear-numbers"> <span class="mdc-button__ripple"></span>
+                                            پاک کردن</button>
+                                        <button class="mdc-button choose"> <span class="mdc-button__ripple"></span>
+                                            انتخاب نفرات</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="filters">
+                            <button id="fltrs" onclick="openFilters()" class="mdc-button mdc-button--outlined filter-button">
+                                <span class="permanent">فیلتر ها </span>
+                                <span class="double">:</span>
+                                <span class="variable"></span>
+
+                                <span class="mdc-button__ripple"></span>
+                            </button>
+                            <div id="filterPopup" class="filter-popup">
+                                <div class="describtion">
+                                    <h3>فیلترها</h3>
+                                    <p>فیلترهای مورد نظر خود را انتخاب و برروی "اعمال فیلتر" کلیک کنید. انتخاب فیلتر های
+                                        بیشتر موجب کاهش نتایج جستجو میشود. </p>
+                                </div>
+                                <div class=" scroll mCustomScrollbar">
+                                    <div class="apartment">
+                                        <h3>نوع اقامتگاه</h3>
+                                        <div class="checkboxes">
+                                            <div class="mdc-form-field">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-1">بوم‌سرا(روستایی)</label>
+                                            </div>
+                                            <div class="mdc-form-field">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-2" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-2">ویلایی</label>
+                                            </div>
+                                            <div class="mdc-form-field">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-3" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-3">تک اتاق</label>
+                                            </div>
+                                            <div class="mdc-form-field">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-4" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-4">آپارتمان، سوئیت</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="residence-info">
+                                        <h3>مشخصات اقامتگاه</h3>
+                                        <div class="info">
+                                            <div class="number">
+                                                <div class="type">
+                                                    <i class="material-icons">place</i>
+                                                    <span>تعداد اتاق</span>
+                                                </div>
+                                                <div class="slider slide-3">
+                                                    <div class="incrementer room">
+                                                        <button onclick="add3()" class="mdc-button mdc-button--raised up">
+                                                            <span class="positive">+</span>
+                                                        </button>
+                                                        <button class="value">
+                                                            <span>0</span>
+
+                                                        </button>
+
+                                                        <button onclick="remove3()" class="mdc-button mdc-button--raised down">
+                                                            <span class="negative">_</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="number">
+                                                <div class="type">
+                                                    <i class="material-icons">airline_seat_individual_suite</i>
+                                                    <span>تعداد تخت</span>
+                                                </div>
+                                                <div class="slider slide-4">
+                                                    <div class="incrementer bed">
+                                                        <button onclick="add4()" class="mdc-button mdc-button--raised up">
+                                                            <span class="positive">+</span>
+                                                        </button>
+                                                        <button class="value">
+                                                            <span>0</span>
+
+                                                        </button>
+
+                                                        <button onclick="remove4()" class="mdc-button mdc-button--raised down">
+                                                            <span class="negative">_</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price-period">
+                                        <h3>بازه قیمت</h3>
+                                        <div class="price">
+                                            <div class="range-value lowest">
+                                                <span id="value-Min-rent"></span>
+                                            </div>
+                                            <span>هزار تومان تا</span>
+                                            <div class="range-value  highest">
+                                                <span id="value-Max-rent"></span>
+                                            </div>
+                                            <span>هزار تومان</span>
+                                            <p class="per-day">به ازای هرشب</p>
+                                        </div>
+                                        <!-- Slider -->
+                                        <div id="pmd-slider-rent" class="pmd-range-slider">
+                                        </div>
+
+
+                                    </div>
+                                    <div class="off-condition">
+                                        <h3>وضعیت تخفیف</h3>
+                                        <div class="checkboxes">
+                                            <div class="mdc-form-field offCondition">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-5" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-5">دارای تخفیف</label>
+                                            </div>
+                                            <div class="mdc-form-field without-off offCondition">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-6" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-6">بدون تخفیف</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="residence-facilities">
+                                        <h3>امکانات اقامتگاه:</h3>
+                                        <div class="facilities">
+                                            <span class="box chosenn">
+                                                اینترنت وایرلس
+                                            </span>
+                                            <span class="box chosenn">
+                                                مبلمان
+                                            </span>
+                                            <span class="box chosenn">
+                                                حمام
+                                            </span>
+                                            <span class="box chosenn">
+                                                تلویزیون
+                                            </span>
+                                            <span class="box chosenn">
+                                                تراس
+                                            </span>
+                                            <span class="box chosenn">
+                                                مبلمان
+                                            </span>
+                                            <span class="box chosenn">
+                                                اینترنت وایرلس
+                                            </span>
+                                            <span class="box chosenn">
+                                                اینترنت وایرلس
+                                            </span>
+                                            <span class="box chosenn">
+                                                اینترنت وایرلس
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="Residence-rules">
+                                        <h3>قوانین اقامتگاه:</h3>
+                                        <div class="checkboxes">
+                                            <div id="hey" class="mdc-form-field">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-7" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-7">استعمال قلیان ممنوع میباشد</label>
+                                            </div>
+                                            <div class="mdc-form-field ">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-8" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-8">ارائه مدرک شناسایی و محرمیت الزامیست!</label>
+                                            </div>
+                                            <div class="mdc-form-field noroz ">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-9" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label class="label" for="checkbox-9">با توجه به شرایط ویژه ایام نوروز،
+                                                    رزروهای نوروزی
+                                                    قابل لغو و استرداد نمیباشد</label>
+                                            </div>
+                                            <div class="mdc-form-field ">
+                                                <div class="mdc-checkbox">
+                                                    <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-10" />
+                                                    <div class="mdc-checkbox__background">
+                                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                        </svg>
+                                                        <div class="mdc-checkbox__mixedmark"></div>
+                                                    </div>
+                                                    <div class="mdc-checkbox__ripple"></div>
+                                                </div>
+                                                <label for="checkbox-10">ورود اثاثیه حجیم و سنگین به ملک ممنوع
+                                                    است</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="apply-filters">
+                                    <div class="chosen-filters">
+                                        <span class="number filter-num">0</span>
+                                        <span class="number"> فیلتر</span>
+                                        <span class="permanent">انتخاب شده</span>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="mdc-button clean " id="clear-filters"> <span class="mdc-button__ripple"></span>
+                                            پاک کردن
+                                        </button>
+                                        <button id="applyFilter" class="mdc-button choose"> <span class="mdc-button__ripple"></span>
+                                            اعمال فیلتر
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="switch-bnt">
+                        <div align="center" id="bit00_3">
+                            <label class="switch">
+                                <strong>نمایش نقشه</strong>
+                                <input type="checkbox" id="checkbox1">
+                                <div class="slider round">
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <main class="search-page search-main">
+        <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner tablet-size">
+
+                <section class="popular mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+
+                    <div class="mdc-layout-grid">
+                        <div class="mdc-layout-grid__inner">
+                            <section class="filter mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet">
+                                <div class="wrapper">
+                                    <span class="order">ترتیب</span>
+                                    <div class="mdc-select">
+                                        <div class="mdc-select__anchor demo-width-class">
+                                            <i class="mdc-select__dropdown-icon material-icons">arrow_drop_down</i>
+                                            <div class="mdc-select__selected-text"></div>
+                                            <span class="mdc-floating-label">فیلتر</span>
+                                            <div class="mdc-line-ripple"></div>
+                                        </div>
+
+                                        <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
+                                            <ul class="mdc-list">
+                                                <li class="mdc-list-item mdc-list-item--selected" data-value="grains">
+                                                    بر اساس قیمت
+                                                </li>
+                                                <li class="mdc-list-item" data-value="vegetables">
+                                                    فیلتر
+                                                </li>
+                                                <li class="mdc-list-item" data-value="fruit">
+                                                    بر اساس نزدیکی
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="found">
+                                    <span class="number">5</span>
+                                    <span> مورد مطابق پیدا شد!</span>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="scroll-parts">
+                        <div class="mdc-layout-grid cards">
+                            <div class="mdc-layout-grid__inner">
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet ">
+                                    <div class="popular-inner" id="first" data-marker="first">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 6.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان اصفهان</span>،
+                                                <span>کاشان</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>خونه‌باغ باباعلی</h4>
+                                                <span></span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
+                                    <div class="popular-inner" id="second">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 1.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان یزد</span>،
+                                                <span>ابرکوه</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>آقازاده ابرکوه</h4>
+                                                <span>سوییت آیدا</span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet last">
+                                    <div class="popular-inner" id="third">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 1.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان یزد</span>،
+                                                <span>ابرکوه</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>آقازاده ابرکوه</h4>
+                                                <span>سوییت آیدا</span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mdc-layout-grid cards">
+                            <div class="mdc-layout-grid__inner">
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet ">
+                                    <div class="popular-inner" id="first" data-marker="first">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 6.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان اصفهان</span>،
+                                                <span>کاشان</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>خونه‌باغ باباعلی</h4>
+                                                <span></span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
+                                    <div class="popular-inner" id="second">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 1.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان یزد</span>،
+                                                <span>ابرکوه</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>آقازاده ابرکوه</h4>
+                                                <span>سوییت آیدا</span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet last">
+                                    <div class="popular-inner" id="third">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 1.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان یزد</span>،
+                                                <span>ابرکوه</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>آقازاده ابرکوه</h4>
+                                                <span>سوییت آیدا</span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mdc-layout-grid cards">
+                            <div class="mdc-layout-grid__inner">
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
+                                    <div class="popular-inner" id="forth">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 1.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان یزد</span>،
+                                                <span>ابرکوه</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>آقازاده ابرکوه</h4>
+                                                <span>سوییت آیدا</span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
+                                    <div class="popular-inner" id="fifth">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 8.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 1.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان اصفهان</span>،
+                                                <span>کاشان</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>خونه‌باغ باباعلی</h4>
+                                                <span></span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet last">
+                                    <div class="popular-inner">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 7.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان یزد</span>،
+                                                <span>ابرکوه</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>آقازاده ابرکوه</h4>
+                                                <span>سوییت آیدا</span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mdc-layout-grid cards">
+                            <div class="mdc-layout-grid__inner">
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
+                                    <div class="popular-inner" id="forth">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 1.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان یزد</span>،
+                                                <span>ابرکوه</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>آقازاده ابرکوه</h4>
+                                                <span>سوییت آیدا</span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
+                                    <div class="popular-inner" id="fifth">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 8.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 1.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان اصفهان</span>،
+                                                <span>کاشان</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>خونه‌باغ باباعلی</h4>
+                                                <span></span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="box-pop mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet last">
+                                    <div class="popular-inner">
+
+                                        <div class="pic">
+                                            <div id="owl-demo" class="owl-carousel">
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 7.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 2.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 3.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 4.jpg">
+                                                </div>
+                                                <div class="ctrl-pic">
+                                                    <img src="./images/Residences/Residence 5.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info">
+                                            <div class="area">
+                                                <span>استان یزد</span>،
+                                                <span>ابرکوه</span>
+                                            </div>
+                                            <div class="title-desc">
+                                                <h4>آقازاده ابرکوه</h4>
+                                                <span>سوییت آیدا</span>
+                                            </div>
+                                            <div class="rate-view">
+                                                <div class="star">
+                                                    <span>۳.۵</span>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_half
+                                                    </i>
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </div>
+                                                <div class="view"><span>(۱۱۹ مشاهده)</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-box">
+                                            <div class="btn">
+                                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span> ادامه<i class="material-icons">
+                                                        keyboard_arrow_left
+                                                    </i></button>
+                                            </div>
+                                            <div class="det">
+                                                <div class="start">
+                                                    <span>شروع از</span>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="day-price">
+                                                        <span>۳۸۴,۰۰۰</span>
+                                                        <span>تومان</span>
+                                                        <span>شب</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdc-layout-grid pagination-fixt">
+                        <div class="mdc-layout-grid__inner paged">
+                            <div class="pagination">
+                                <a href="#">
+                                    <span id="page" class="page active">1</span>
+                                </a>
+                                <a href="#">
+                                    <span id="page" class="page">2</span>
+                                </a>
+                                <a href="#">
+                                    <span id="page" class="page">3</span>
+                                </a>
+                                <a class="next" href="#">
+                                    <button class="mdc-button mdc-ripple-no-line next"><span class="mdc-button__ripple"></span>
+                                        <i class="material-icons">
+                                            chevron_left
+                                        </i>
+                                    </button>
+                                </a>
+
+                                <button class="mdc-button mdc-ripple-no-line"> <span class="mdc-button__ripple"></span>
+                                    آخرین
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="map mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-8-tablet">
+                    <div class="mdc-layout-grid__inner map-inner">
+                        <div id="search-map" class="mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet search-map">
+
+                        </div>
+
+
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/searh-nmp.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+    <script src="./js/nouislider.js"></script>
+    <script src="./js/wNumb.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="./js/SearchPage.js"></script>
+    <script src="./js/SearchMap.js"></script>
+
+</body>
+
+</html>
