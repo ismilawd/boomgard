@@ -184,6 +184,10 @@
     border-radius: 100px 0 0 100px;
 }
 
+.range-empty{
+    background-color: transparent !important;
+}
+
 .popover-boomgard table table tbody.days td.selected-range-days>span {
     color: #fff;
 }
@@ -380,10 +384,10 @@ table {
     border-radius: 100px 0 0 100px;
 }
 
-.popover-boomgard table table .range-empty, .popover-boomgard table table tbody.days td[data-nm].range-empty:hover {
+/* .popover-boomgard table table .range-empty, .popover-boomgard table table tbody.days td[data-nm].range-empty:hover {
     background-color: #ff2c67 !important;
     opacity: 1 !important;
-}
+} */
 
 .popover-boomgard table table tbody.days td.text-danger>span {
     color: #fe3257;
